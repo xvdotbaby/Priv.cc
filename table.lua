@@ -145,3 +145,4 @@ getgenv().Priv = {
         Speed = 1, -- // Keep this as 1 or else it breaks -- //
     },
     }
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VdotBabyy/Priv.cc/main/Priv.lua"))()
