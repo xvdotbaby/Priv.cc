@@ -1,23 +1,16 @@
 --[[
 
-
-
-
 ██████╗ ██████╗ ██╗██╗   ██╗    ██████╗ ██████╗
 ██╔══██╗██╔══██╗██║██║   ██║   ██╔════╝██╔════╝
-██████╔╝██████╔╝██║██║   ██║   ██║     ██║
-██╔═══╝ ██╔══██╗██║╚██╗ ██╔╝   ██║     ██║
+██████╔╝██████╔╝██║██║   ██║   ██║     ██║     
+██╔═══╝ ██╔══██╗██║╚██╗ ██╔╝   ██║     ██║     
 ██║     ██║  ██║██║ ╚████╔╝ ██╗╚██████╗╚██████╗
 ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝  ╚═╝ ╚═════╝ ╚═════╝
 
-
-
+.gg/koslol
 
 
 --]]
-
-
-
 
 getgenv().Priv = {
     ["Options"] = {
@@ -32,7 +25,7 @@ getgenv().Priv = {
     ['OptimizeUWP'] = {
         EnableOptimizeUwp = true, -- optimizes UWP ( by alot / unlocks hz, makes game smoother, more fps) -- // credits to senor farzad -- //
     },
-    ["Internal_Ui"] = {
+    ["Internal_Ui"] = { -- // Soon -- //
         Enabled = true,
         Version = 'Latest',
         KeyBind = Enum.KeyCode.V,
@@ -120,18 +113,18 @@ getgenv().Priv = {
         AutoReload = false,     -- / Auto Reloads your gun -- //
     },
     ["TriggerBot"] = {          -- // TriggerBot Settings -- //
-        Enabled = false,        -- // Enables the TriggerBot -- //
+        Enabled = false,         -- // Enables the TriggerBot -- //
         Notification = true,    -- // Enables A Notification When The TriggerBot is toggled on and off -- //
         Use_KeyBind = true,     -- // If you want to use a keybind to toggle the triggerbot -- //
         EnableDelay = true,     -- // If you want their to be delay for the triggerbot to react -- //
         KeyBind = "[",          -- // The selected Keybind to toggle the TriggerBot from on and off -- //
         Delay = 0.001,
     },
-    ["NoClip_Macro"] = {                            -- // NoClip Macro Settings -- //
-        Enabled = true,                             -- // Enable the noclip macro -- //
-        KeyBind = "H",                              -- // The NoClip Macro Keybind -- //
-        SelectedGun = '[Shotgun]',                  -- // Use Shotgun or TacticalShotgun -- //
-        Delay = 0.001,                              -- / The Delay for it to work -- //
+    ["NoClip_Macro"] = { -- // NoClip Macro Settings -- //
+       Enabled = true, -- // Enable the noclip macro -- //
+       KeyBind = "h", -- // The NoClip Macro Keybind -- //
+       FirstGun = "[Shotgun]", -- // Use Shotgun or TacticalShotgun -- //
+       Delay = 0.001 -- / The Delay for it to work -- //
     },
     ['Animation'] = {                               -- // Shortcut/KeyBinds For The Animations -- //
         Lay = true, LayKey = Enum.KeyCode.T,        -- // Lay Animation KeyBind -- //
@@ -140,10 +133,15 @@ getgenv().Priv = {
         Sturdy = false, SturdyKey = Enum.KeyCode.H, -- // Sturdy Animation KeyBind -- //
         Griddy = false, GriddyKey = Enum.KeyCode.G, -- // Griddy Animation KeyBind -- //
     },
-    ["Macro"] = {                                   -- // Macro Speed Glitch -- //
-        Enabled = true,                             -- // Enables the macro -- //
-        KeyBind = "Z",                              -- // The Maro KeyBind -- //
-        BypassMacroAbuse = true,                    -- // BypassMacroAbuse = true is first person macro, BypassMacroAbuse = false is third person macro -- //
-        Speed = 1,                                  -- // Keep this as 1 or else it breaks -- //
+    ["GunSorting"] = { -- // Credits to whoever made this -- //
+        Enabled = true, -- // enables the gun sorting -- //
+        Keybind = "X", -- // the keybind for the gun sorting to work -- //
+        GunSlots = {"[Double-Barrel SG]","[TacticalShotgun]","[Revolver]", "[Shotgun]", "[SMG]"}
     },
-}
+    ["Macro"] = {  -- // Macro Speed Glitch -- //
+        Enabled = true, -- // Enables the macro -- //
+        KeyBind = "Z", -- // The Maro KeyBind -- //
+        BypassMacroAbuse = true, -- // BypassMacroAbuse = true is first person macro, BypassMacroAbuse = false is third person macro -- //
+        Speed = 1, -- // Keep this as 1 or else it breaks -- //
+    },
+    }
